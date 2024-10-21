@@ -11,14 +11,9 @@ import streamlit as st
 
 # Título de la aplicación
 st.title("Expresiones de Género LGBTIQ")
-st.image("URC.png", caption="UST-URC Universidad Rosario Castellanos", width=300)
+st.image("URC.png", caption="UST-URC Universidad Rosario Castellanos", width=200)
 
 
-# Introducción
-st.write("""
-Esta aplicación tiene como objetivo educar sobre las diferentes expresiones de género y orientaciones dentro de la comunidad LGBTIQ.
-Utiliza el menú desplegable a continuación para explorar términos específicos.
-""")
 
 # Introducción
 st.write("""
@@ -65,11 +60,12 @@ terminos = {
 # Menú desplegable para seleccionar un término
 term_selected = st.selectbox("Selecciona un término:", list(terminos.keys()))
 
-# Mostrar descripción y GIF del término seleccionado
+# Mostrar descripción y GIF del término seleccionado con tamaño ajustado
 if term_selected in terminos:
     st.subheader(term_selected)
     st.write(terminos[term_selected]["descripcion"])
-    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}", width=150)
+    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}", width=200)
+
 
 
 
