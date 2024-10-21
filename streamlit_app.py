@@ -11,7 +11,7 @@ import streamlit as st
 
 # Título de la aplicación
 st.title("Expresiones de Género LGBTIQ")
-st.gif("gifqr.gif", caption="UST-URC Universidad Rosario Castellanos", width=300)
+st.image("gifqr.gif", caption="UST-URC Universidad Rosario Castellanos", width=300)
 
 
 # Introducción
