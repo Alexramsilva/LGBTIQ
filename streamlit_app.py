@@ -11,7 +11,7 @@ import streamlit as st
 
 # Título de la aplicación
 st.title("Expresiones de Género LGBTIQ")
-st.image("gifqr.gif", caption="UST-URC Universidad Rosario Castellanos", width=300)
+st.image("URC.png", caption="UST-URC Universidad Rosario Castellanos", width=300)
 
 
 # Introducción
@@ -69,7 +69,7 @@ term_selected = st.selectbox("Selecciona un término:", list(terminos.keys()))
 if term_selected in terminos:
     st.subheader(term_selected)
     st.write(terminos[term_selected]["descripcion"])
-    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}")
+    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}", width=150)
 
 
 
@@ -91,7 +91,7 @@ st.markdown("""
         background-color: #7d2181;
     }
     .css-1d391kg {
-        color: #d7d0d2;
+        color:  #faf7f8;
     }
 </style>
 """, unsafe_allow_html=True)
