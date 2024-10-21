@@ -24,7 +24,7 @@ Utiliza el menú desplegable a continuación para explorar términos específico
 terminos = {
     "Lesbiana": {
         "descripcion": "Mujer que se siente atraída romántica y/o sexualmente hacia otras mujeres.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Gay": {
         "descripcion": "Hombre que se siente atraído romántica y/o sexualmente hacia otros hombres.",
@@ -80,10 +80,10 @@ st.write("Desarrollado por [Perspectiva de Género para el Diseño Social].")
 st.markdown("""
 <style>
     .stApp {
-        background-color: #0000ff;
+        background-color: #5353ec;
     }
     .css-1d391kg {
-        color: #4a4a4a;
+        color: #d7d0d2;
     }
 </style>
 """, unsafe_allow_html=True)
