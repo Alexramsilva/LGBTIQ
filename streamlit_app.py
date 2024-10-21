@@ -64,7 +64,7 @@ term_selected = st.selectbox("Selecciona un término:", list(terminos.keys()))
 if term_selected in terminos:
     st.subheader(term_selected)
     st.write(terminos[term_selected]["descripcion"])
-    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}", width=200)
+    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}")
 
 
 
