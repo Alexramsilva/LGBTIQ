@@ -20,6 +20,12 @@ Esta aplicación tiene como objetivo educar sobre las diferentes expresiones de 
 Utiliza el menú desplegable a continuación para explorar términos específicos.
 """)
 
+# Introducción
+st.write("""
+Esta aplicación tiene como objetivo educar sobre las diferentes expresiones de género y orientaciones dentro de la comunidad LGBTIQ.
+Utiliza el menú desplegable a continuación para explorar términos específicos.
+""")
+
 # Diccionario de términos con multimedia
 terminos = {
     "Lesbiana": {
@@ -28,42 +34,44 @@ terminos = {
     },
     "Gay": {
         "descripcion": "Hombre que se siente atraído romántica y/o sexualmente hacia otros hombres.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Bisexual": {
         "descripcion": "Persona que se siente atraída romántica y/o sexualmente hacia personas de más de un género.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Transgénero": {
         "descripcion": "Persona cuya identidad de género es diferente del sexo que se le asignó al nacer.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Intersex": {
         "descripcion": "Persona que nace con características sexuales que no encajan en las definiciones típicas de masculino o femenino.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Queer": {
         "descripcion": "Término general que abarca diversas identidades que no se ajustan a las normas de género y sexualidad tradicionales.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Asexual": {
         "descripcion": "Persona que no siente atracción sexual o la siente en un grado muy bajo.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
     "Pansexual": {
         "descripcion": "Persona que se siente atraída por otros sin importar su género.",
-        "imagen": "URC.png"
+        "gif": "gifqr.gif"
     },
 }
 
 # Menú desplegable para seleccionar un término
 term_selected = st.selectbox("Selecciona un término:", list(terminos.keys()))
 
-# Mostrar descripción y multimedia del término seleccionado
+# Mostrar descripción y GIF del término seleccionado
 if term_selected in terminos:
     st.subheader(term_selected)
     st.write(terminos[term_selected]["descripcion"])
-    st.image(terminos[term_selected]["imagen"], caption=f"Bandera de {term_selected}")
+    st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}")
+
+
 
 # Sección de recursos adicionales
 st.header("Recursos Adicionales")
@@ -74,13 +82,13 @@ st.write("""
 """)
 
 # Footer
-st.write("Desarrollado por [Perspectiva de Género para el Diseño Social].")
+st.write("Desarrollado por [Perspectiva de Género para el Diseño Social | Grupos 104, 107 COY-LCFI-URC].")
 
 # Personalización de diseño
 st.markdown("""
 <style>
     .stApp {
-        background-color: #5353ec;
+        background-color: #7d2181;
     }
     .css-1d391kg {
         color: #d7d0d2;
