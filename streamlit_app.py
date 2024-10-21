@@ -11,7 +11,7 @@ import streamlit as st
 
 # Título de la aplicación
 st.title("Expresiones de Género LGBTIQ")
-st.image("URC.png", caption="UST-URC Universidad Rosario Castellanos", width=300)
+st.gif("gifqr.gif", caption="UST-URC Universidad Rosario Castellanos", width=300)
 
 
 # Introducción
@@ -75,3 +75,15 @@ st.write("""
 
 # Footer
 st.write("Desarrollado por [Perspectiva de Género para el Diseño Social].")
+
+# Personalización de diseño
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #0000ff;
+    }
+    .css-1d391kg {
+        color: #4a4a4a;
+    }
+</style>
+""", unsafe_allow_html=True)
