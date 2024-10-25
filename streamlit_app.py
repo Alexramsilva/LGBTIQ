@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 
 # Título de la aplicación
-st.title("Expresiones de Género LGBTIQ")
+st.title("Expresiones de Género LGBTIQ+")
 st.image("URC.png", caption="UST-URC Universidad Rosario Castellanos", width=200)
 
 
@@ -66,28 +66,40 @@ if term_selected in terminos:
     st.write(terminos[term_selected]["descripcion"])
     st.image(terminos[term_selected]["gif"], caption=f"GIF representativo de {term_selected}")
 
-
-
-
-# Sección de recursos adicionales
-st.header("Recursos Adicionales")
-st.write("""
-- [Wikipedia: LGBTIQ](https://es.wikipedia.org/wiki/LGBT)
-- [Asociaciones y grupos de apoyo LGBTIQ](https://www.lambdalegal.org/)
-- [Guías sobre diversidad de género](https://www.glaad.org/)
-""")
-
-# Footer
-st.write("Desarrollado por [Perspectiva de Género para el Diseño Social | Grupos 104, 107 COY-LCFI-URC].")
-
 # Personalización de diseño
 st.markdown("""
 <style>
     .stApp {
-        background-color: #7d2181;
+        background-color:  #da3262;
     }
     .css-1d391kg {
         color:  #faf7f8;
     }
 </style>
+""", unsafe_allow_html=True)
+
+# Añadir la línea separadora
+st.markdown("<hr>", unsafe_allow_html=True)
+
+# Sección de recursos adicionales
+st.header("Recursos Adicionales")
+st.write("Encuesta Nacional sobre la Diversidad Sexual y de Género (ENDISEG) 2021. (ENEGI)")
+st.write("https://www.inegi.org.mx/programas/endiseg/2021/#microdatos")
+
+# Añadir la línea separadora
+st.markdown("<hr>", unsafe_allow_html=True)
+
+# Insertar el código HTML con estilos personalizados
+st.markdown("""
+    <div class="container col-sm-5 creditos text-center">
+        <p style="margin-top:0;margin-bottom:0;font-size:15px;color: #424040;text-align:center">
+            <strong>Colaboración:</strong>
+        </p>
+        <p style="margin-top:0;margin-bottom:0;font-size:12px;color:  #979394 ;text-align:center">
+            <strong>Asignatura (UCA): Perspectiva de Género para el Diseño Social  LCFI-URC</strong>
+        </p>
+        <p style="margin-top:0;margin-bottom:0;font-size:12px;color:  #979394 ;text-align:center">
+            <strong>Grupos 104 y 107 COY-LCFI-URC</strong>
+        </p>
+    </div>
 """, unsafe_allow_html=True)
